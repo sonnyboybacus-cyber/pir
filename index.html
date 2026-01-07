@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIR: Performance Implementation Review - JNIS</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <div id="sidebar">
+        <div class="brand-area">
+            <div class="brand-title">JNIS ANALYTICS</div>
+            <div class="brand-subtitle">SY 2025-2026 • Q1-Q2 Review</div>
+        </div>
+        <div class="nav-scroll" id="navContainer">
+            <!-- JS will populate -->
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <div id="main">
+        <div class="top-bar">
+            <div class="top-bar-title" id="currentSectionTitle">Welcome</div>
+            <div class="top-bar-counter" id="slideCounter">1 / 60</div>
+            <div class="progress-track">
+                <div class="progress-fill" id="progressBar"></div>
+            </div>
+        </div>
+
+        <div class="slide-wrapper" id="slideWrapper">
+            <!-- Slides loaded dynamically by app.js -->
+        </div>
+
+        <div class="nav-controls">
+            <button class="nav-btn" onclick="prevSlide()"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="nav-btn" onclick="nextSlide()"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/charts.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
