@@ -64,6 +64,8 @@ const slideManifest = [
     { path: 'slides/quality/opcrf-validation.html', group: 'QUALITY', title: 'OPCRF Validation' },
     { path: 'slides/quality/aral-program.html', group: 'QUALITY', title: 'Aral Program' },
     { path: 'slides/quality/nutrition-gallery.html', group: 'QUALITY', title: 'Nutrition Month' },
+    { path: 'slides/quality/sbfp-status.html', group: 'QUALITY', title: 'SBFP Report' },
+    { path: 'slides/quality/sbfp-gallery.html', group: 'QUALITY', title: 'SBFP Gallery' },
     { path: 'slides/quality/gpta-officers.html', group: 'QUALITY', title: 'PTA Induction' },
 
     // TEACHER DEVELOPMENT
@@ -627,6 +629,39 @@ function updateGptaCarousel(slides, dots) {
     });
     dots.forEach((dot, i) => {
         dot.classList.toggle('active', i === gptaCarouselIndex);
+    });
+}
+
+// --- SBFP Carousel Functions ---
+let sbfpCarouselIndex = 0;
+
+function moveSbfpCarousel(direction) {
+    const slides = document.querySelectorAll('#sbfpCarousel .carousel-slide');
+    const dots = document.querySelectorAll('#sbfpDots .carousel-dot');
+    if (slides.length === 0) return;
+
+    sbfpCarouselIndex += direction;
+    if (sbfpCarouselIndex >= slides.length) sbfpCarouselIndex = 0;
+    if (sbfpCarouselIndex < 0) sbfpCarouselIndex = slides.length - 1;
+
+    updateSbfpCarousel(slides, dots);
+}
+
+function goToSbfpSlide(index) {
+    const slides = document.querySelectorAll('#sbfpCarousel .carousel-slide');
+    const dots = document.querySelectorAll('#sbfpDots .carousel-dot');
+    if (slides.length === 0) return;
+
+    sbfpCarouselIndex = index;
+    updateSbfpCarousel(slides, dots);
+}
+
+function updateSbfpCarousel(slides, dots) {
+    slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === sbfpCarouselIndex);
+    });
+    dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === sbfpCarouselIndex);
     });
 }
 
