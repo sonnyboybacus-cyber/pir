@@ -13,6 +13,7 @@ const slideManifest = [
     // ACCESS
     { path: 'slides/access/demographics.html', group: 'ACCESS', title: 'Demographics', chart: 'enrollChart' },
     { path: 'slides/access/enrollment-trends.html', group: 'ACCESS', title: 'Enrollment Trends', chart: 'elemEnrollChart' },
+    { path: 'slides/access/org-chart.html', group: 'ACCESS', title: 'Organizational Chart' },
 
     // QUALITY - Overview
     { path: 'slides/quality/kpi-dashboard.html', group: 'QUALITY', title: 'KPI Dashboard' },
@@ -62,6 +63,8 @@ const slideManifest = [
 
     // QUALITY - Programs & Holistic
     { path: 'slides/quality/aral-program.html', group: 'QUALITY', title: 'Aral Program' },
+    { path: 'slides/quality/aral-summary.html', group: 'QUALITY', title: 'Aral Summary' },
+    { path: 'slides/quality/learning-resources.html', group: 'QUALITY', title: 'Learning Resources' },
     { path: 'slides/quality/jdvp-implementation.html', group: 'QUALITY', title: 'JDVP Implementation' },
     { path: 'slides/quality/jdvp-strategies.html', group: 'QUALITY', title: 'JDVP Strategies' },
     { path: 'slides/quality/jdvp-gallery.html', group: 'QUALITY', title: 'JDVP Gallery' },
