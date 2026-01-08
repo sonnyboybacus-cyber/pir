@@ -1,0 +1,69 @@
+<div style="display: flex; flex-direction: column; height: 100%; gap: 1rem;">
+
+    <div style="text-align: center;">
+        <span class="tag" style="color: #6366f1;">Quality</span>
+        <h2 style="margin: 0.5rem 0 0 0; font-size: 2.0rem;">Grade 6 Achievement Rate Analysis</h2>
+        <p style="font-size: 1rem; color: #475569; margin-top: 5px;">Comparative Performance: First Quarter vs Second
+            Quarter</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; flex: 1; min-height: 0;">
+
+        <!-- Chart Container -->
+        <div class="glass-card"
+            style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: center; background: rgba(0, 0, 0, 0.02);">
+            <canvas id="g6AchievementChart"></canvas>
+        </div>
+
+        <!-- Interpretation & Analysis -->
+        <div style="display: flex; flex-direction: column; gap: 1rem; overflow-y: auto;">
+
+            <!-- Summary -->
+            <div class="glass-card" style="padding: 1rem; border-left: 4px solid #f59e0b;">
+                <h4 style="margin: 0 0 0.5rem 0; color: #f59e0b; display: flex; align-items: center; gap: 8px;">
+                    <i class="fa-solid fa-triangle-exclamation"></i> Critical Progress
+                </h4>
+                <p style="color: #475569; font-size: 0.9rem; margin: 0; line-height: 1.5;">
+                    Grade 6 is our most challenged batch, starting with a Q1 average of <strong>38.4%</strong>. However,
+                    Q2 shows a promising recovery to <strong>47.8%</strong>, a +9.3% gain driven by remediation.
+                </p>
+            </div>
+
+            <!-- Top Performer -->
+            <div class="glass-card" style="padding: 1rem; border-left: 4px solid #22c55e;">
+                <h4 style="margin: 0 0 0.5rem 0; color: #22c55e; display: flex; align-items: center; gap: 8px;">
+                    <i class="fa-solid fa-flask"></i> Science Turnaround
+                </h4>
+                <p style="color: #475569; font-size: 0.9rem; margin: 0; line-height: 1.5;">
+                    <strong>Science</strong> achieved a massive turnaround, doubling from <strong>25.6%</strong> to
+                    <strong>52.1%</strong>. This proves that focused, hands-on intervention can drastically improve
+                    outcomes even for struggling cohorts.
+                </p>
+            </div>
+
+            <!-- Areas for Improvement -->
+            <div class="glass-card" style="padding: 1rem; border-left: 4px solid #ef4444;">
+                <h4 style="margin: 0 0 0.5rem 0; color: #ef4444; display: flex; align-items: center; gap: 8px;">
+                    <i class="fa-solid fa-book-open"></i> English Decline
+                </h4>
+                <p style="color: #475569; font-size: 0.9rem; margin: 0; line-height: 1.5;">
+                    While other subjects improved, <strong>English</strong> significantly dropped from
+                    <strong>43.2%</strong> to <strong>34.7%</strong>. This indicates a potential regression in reading
+                    comprehension that needs urgent reading camps.
+                </p>
+            </div>
+
+            <!-- Recommendation -->
+            <div class="glass-card" style="padding: 1rem; border-left: 4px solid #6366f1;">
+                <h4 style="margin: 0 0 0.5rem 0; color: #6366f1; display: flex; align-items: center; gap: 8px;">
+                    <i class="fa-solid fa-hand-holding-heart"></i> Intensive Care
+                </h4>
+                <p style="color: #475569; font-size: 0.9rem; margin: 0; line-height: 1.5;">
+                    Continue the successful Science/Math strategies. Immediately launch an intensive "Project RELY"
+                    (Reading Enhancement for Learning Youth) for Grade 6 English.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>

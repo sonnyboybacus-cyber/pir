@@ -1,0 +1,67 @@
+<div style="display: flex; flex-direction: column; height: 100%; gap: 1rem;">
+
+    <div style="text-align: center;">
+        <span class="tag" style="color: #6366f1;">Quality</span>
+        <h2 style="margin: 0.5rem 0 0 0; font-size: 2.0rem;">Grade 5 Achievement Rate Analysis</h2>
+        <p style="font-size: 1rem; color: #475569; margin-top: 5px;">Comparative Performance: First Quarter vs Second
+            Quarter</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; flex: 1; min-height: 0;">
+
+        <!-- Chart Container -->
+        <div class="glass-card"
+            style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: center; background: rgba(0, 0, 0, 0.02);">
+            <canvas id="g5AchievementChart"></canvas>
+        </div>
+
+        <!-- Interpretation & Analysis -->
+        <div style="display: flex; flex-direction: column; gap: 1rem; overflow-y: auto;">
+
+            <!-- Summary -->
+            <div class="glass-card" style="padding: 1rem; border-left: 4px solid #f59e0b;">
+                <h4 style="margin: 0 0 0.5rem 0; color: #f59e0b; display: flex; align-items: center; gap: 8px;">
+                    <i class="fa-solid fa-scale-balanced"></i> Mixed Results
+                </h4>
+                <p style="color: #475569; font-size: 0.9rem; margin: 0; line-height: 1.5;">
+                    The overall achievement rate remained stable at ~75.4%. However, this stability masks significant
+                    volatility between subjects, with some showing major gains and others steep declines.
+                </p>
+            </div>
+
+            <!-- Top Performer -->
+            <div class="glass-card" style="padding: 1rem; border-left: 4px solid #22c55e;">
+                <h4 style="margin: 0 0 0.5rem 0; color: #22c55e; display: flex; align-items: center; gap: 8px;">
+                    <i class="fa-solid fa-calculator"></i> Major Math Recovery
+                </h4>
+                <p style="color: #475569; font-size: 0.9rem; margin: 0; line-height: 1.5;">
+                    <strong>Math</strong> achieved the highest growth, jumping <strong>+13.2%</strong> (from 52.9% to
+                    66.2%), verifying that the remedial numeracy programs are highly effective.
+                </p>
+            </div>
+
+            <!-- Areas for Improvement -->
+            <div class="glass-card" style="padding: 1rem; border-left: 4px solid #ef4444;">
+                <h4 style="margin: 0 0 0.5rem 0; color: #ef4444; display: flex; align-items: center; gap: 8px;">
+                    <i class="fa-solid fa-triangle-exclamation"></i> EPP Utility Drop
+                </h4>
+                <p style="color: #475569; font-size: 0.9rem; margin: 0; line-height: 1.5;">
+                    <strong>EPP</strong> suffered the largest decline of <strong>-9.6%</strong>. Immediate investigation
+                    is needed to understand why practical skills performance dipped so sharply.
+                </p>
+            </div>
+
+            <!-- Recommendation -->
+            <div class="glass-card" style="padding: 1rem; border-left: 4px solid #6366f1;">
+                <h4 style="margin: 0 0 0.5rem 0; color: #6366f1; display: flex; align-items: center; gap: 8px;">
+                    <i class="fa-solid fa-clipboard-check"></i> Action Plan
+                </h4>
+                <p style="color: #475569; font-size: 0.9rem; margin: 0; line-height: 1.5;">
+                    Replicate the successful Math intervention strategies for EPP and MAPEH, while maintaining the
+                    excellent performance in GMRC (90.4%).
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>

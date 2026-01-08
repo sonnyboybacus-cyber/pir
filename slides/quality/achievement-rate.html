@@ -1,0 +1,71 @@
+<div style="display: flex; flex-direction: column; height: 100%; gap: 1rem;">
+
+    <div style="text-align: center;">
+        <span class="tag" style="color: #6366f1;">Quality</span>
+        <h2 style="margin: 0.5rem 0 0 0; font-size: 2.0rem;">Grade 4 Achievement Rate Analysis</h2>
+        <p style="font-size: 1rem; color: #94a3b8; margin-top: 5px;">Comparative Performance: First Quarter vs Second
+        <p style="font-size: 1rem; color: #475569; margin-top: 5px;">Comparative Performance: First Quarter vs Second
+            Quarter</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; flex: 1; min-height: 0;">
+
+        <!-- Chart Container -->
+        <div class="glass-card"
+            style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: center; background: rgba(0, 0, 0, 0.02);">
+            <canvas id="achievementChart"></canvas>
+        </div>
+
+        <!-- Interpretation & Analysis -->
+        <div style="display: flex; flex-direction: column; gap: 1rem; overflow-y: auto;">
+
+            <!-- Summary -->
+            <div class="glass-card" style="padding: 1rem; border-left: 4px solid #f59e0b;">
+                <h4 style="margin: 0 0 0.5rem 0; color: #f59e0b; display: flex; align-items: center; gap: 8px;">
+                    <i class="fa-solid fa-scale-balanced"></i> Stable Performance
+                </h4>
+                <p style="color: #475569; font-size: 0.9rem; margin: 0; line-height: 1.5;">
+                    The Overall Achievement Rate remains relatively stable with a minor variance of <strong
+                        style="color: #1e293b;">-0.7%</strong> (76.61% to 75.91%), indicating consistent general
+                    performance despite subject-specific fluctuations.
+                </p>
+            </div>
+
+            <!-- Gains -->
+            <div class="glass-card" style="padding: 1rem; border-left: 4px solid #22c55e;">
+                <h4 style="margin: 0 0 0.5rem 0; color: #22c55e; display: flex; align-items: center; gap: 8px;">
+                    <i class="fa-solid fa-arrow-trend-up"></i> Significant Gains
+                </h4>
+                <p style="color: #475569; font-size: 0.9rem; margin: 0; line-height: 1.5;">
+                    <strong>Araling Panlipunan (+11.25%)</strong> and <strong>Filipino (+7.71%)</strong> showed
+                    remarkable improvement. These gains suggest that recent instructional adjustments or localized
+                    materials in these subjects are effective.
+                </p>
+            </div>
+
+            <!-- Declines -->
+            <div class="glass-card" style="padding: 1rem; border-left: 4px solid #ef4444;">
+                <h4 style="margin: 0 0 0.5rem 0; color: #ef4444; display: flex; align-items: center; gap: 8px;">
+                    <i class="fa-solid fa-circle-exclamation"></i> Areas for Review
+                </h4>
+                <p style="color: #475569; font-size: 0.9rem; margin: 0; line-height: 1.5;">
+                    <strong>English (-12.91%)</strong> and <strong>Science (-12.5%)</strong> experienced sharp declines.
+                    This warrants an immediate review of Q2 competencies, which may have been significantly more complex
+                    or abstract than Q1.
+                </p>
+            </div>
+
+            <!-- Recommendation -->
+            <div class="glass-card" style="padding: 1rem; border-left: 4px solid #6366f1;">
+                <h4 style="margin: 0 0 0.5rem 0; color: #6366f1; display: flex; align-items: center; gap: 8px;">
+                    <i class="fa-solid fa-clipboard-check"></i> Recommendation
+                </h4>
+                <p style="color: #475569; font-size: 0.9rem; margin: 0; line-height: 1.5;">
+                    Implement targeted remediation for English and Science focusing on reading comprehension and
+                    scientific inquiry skills. Adopt the successful strategies from AP and Filipino for other subjects.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>

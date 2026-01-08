@@ -7,8 +7,10 @@
 const slideManifest = [
     // TITLE PAGE
     { path: 'slides/quality/intro.html', group: 'TITLE PAGE', title: 'Overview' },
+    { path: 'slides/quality/deped-vmv.html', group: 'TITLE PAGE', title: 'Vision & Mission' },
+    { path: 'slides/quality/class-program.html', group: 'TITLE PAGE', title: 'Class Program' },
 
-    // ACCESS - Enrollment & Demographics
+    // ACCESS
     { path: 'slides/access/demographics.html', group: 'ACCESS', title: 'Demographics', chart: 'enrollChart' },
     { path: 'slides/access/enrollment-trends.html', group: 'ACCESS', title: 'Enrollment Trends', chart: 'elemEnrollChart' },
 
@@ -16,44 +18,53 @@ const slideManifest = [
     { path: 'slides/quality/kpi-dashboard.html', group: 'QUALITY', title: 'KPI Dashboard' },
     { path: 'slides/quality/success-gallery.html', group: 'QUALITY', title: 'Success Gallery' },
 
-    // QUALITY - National Assessments
+    // QUALITY - National Assessments & Literacy
     { path: 'slides/quality/ellna-assessment.html', group: 'QUALITY', title: 'ELLNA Assessment', chart: 'ellnaChart' },
     { path: 'slides/quality/nat-grade6.html', group: 'QUALITY', title: 'NAT Grade 6', chart: 'natG6Chart' },
     { path: 'slides/quality/nat-grade10.html', group: 'QUALITY', title: 'NAT Grade 10', chart: 'natG10Chart' },
-
-    // QUALITY - Early Literacy (CRLA Grades 1-3)
     { path: 'slides/quality/crla-intro.html', group: 'QUALITY', title: 'CRLA Intro' },
     { path: 'slides/quality/grade1-analysis.html', group: 'QUALITY', title: 'Grade 1 Analysis', chart: 'g1Chart' },
-    { path: 'slides/quality/grade2-3.html', group: 'QUALITY', title: 'Grade 2 & 3' },
-
-    // QUALITY - Reading Proficiency (Phil-IRI)
     { path: 'slides/quality/reading-intro.html', group: 'QUALITY', title: 'Reading Intro' },
     { path: 'slides/quality/philiri-elem-english.html', group: 'QUALITY', title: 'Phil-IRI Elem English', chart: 'philIriElemEngChart' },
+    { path: 'slides/quality/elem-english.html', group: 'QUALITY', title: 'Elem English Trends', chart: 'elemEngChart' },
     { path: 'slides/quality/philiri-sec-english.html', group: 'QUALITY', title: 'Phil-IRI Sec English', chart: 'philIriSecEngChart' },
     { path: 'slides/quality/sec-filipino-alert.html', group: 'QUALITY', title: 'Phil-IRI Sec Filipino', chart: 'philIriSecFilChart' },
     { path: 'slides/quality/philiri-gallery.html', group: 'QUALITY', title: 'Phil-IRI Gallery' },
-    { path: 'slides/quality/elem-english.html', group: 'QUALITY', title: 'Elem English Trends', chart: 'elemEngChart' },
+    { path: 'slides/quality/reading-month.html', group: 'QUALITY', title: 'Reading Month' },
 
-    // QUALITY - Academic Performance (SHS)
-    { path: 'slides/quality/academics-intro.html', group: 'QUALITY', title: 'Academics Intro' },
-    { path: 'slides/quality/grade11-overview.html', group: 'QUALITY', title: 'Grade 11 Overview', chart: 'shsChart' },
-    { path: 'slides/quality/grade11-deepdive.html', group: 'QUALITY', title: 'Grade 11 Deep Dive', chart: 'g11SubChart' },
-    { path: 'slides/quality/grade11-status.html', group: 'QUALITY', title: 'Grade 11 Status' },
-    { path: 'slides/quality/grade11-competencies.html', group: 'QUALITY', title: 'Grade 11 Competencies' },
-    { path: 'slides/quality/grade12-overview.html', group: 'QUALITY', title: 'Grade 12 Overview', chart: 'g12Chart' },
-    { path: 'slides/quality/grade12-competencies.html', group: 'QUALITY', title: 'Grade 12 Competencies' },
+    // QUALITY - Academic Achievement (Elementary)
+    { path: 'slides/quality/grade1-performance.html', group: 'QUALITY', title: 'G1 Performance (Q2)', chart: ['g1PerformanceChart', 'g1MasteryChart'] },
+    { path: 'slides/quality/grade2-performance.html', group: 'QUALITY', title: 'G2 Performance (Q1)', chart: ['g2SubjectChart', 'g2StudentChart'] },
+    { path: 'slides/quality/grade3-achievement.html', group: 'QUALITY', title: 'G3 Achievement Rate', chart: 'g3AchievementChart' },
+    { path: 'slides/quality/achievement-rate.html', group: 'QUALITY', title: 'G4 Achievement Rate', chart: 'achievementChart' },
+    { path: 'slides/quality/grade5-achievement.html', group: 'QUALITY', title: 'G5 Achievement Rate', chart: 'g5AchievementChart' },
+    { path: 'slides/quality/grade6-achievement.html', group: 'QUALITY', title: 'G6 Achievement Rate', chart: 'g6AchievementChart' },
+    { path: 'slides/quality/grade2-3.html', group: 'QUALITY', title: 'Grade 2 & 3' },
 
-    // QUALITY - JDVP
-    { path: 'slides/quality/jdvp-implementation.html', group: 'QUALITY', title: 'JDVP Implementation' },
-    { path: 'slides/quality/jdvp-strategies.html', group: 'QUALITY', title: 'JDVP Strategies' },
-    { path: 'slides/quality/jdvp-gallery.html', group: 'QUALITY', title: 'JDVP Gallery' },
-    // DFOT Gallery moved to Achievements section
-
-    // QUALITY - Subject Analysis (JHS)
+    // QUALITY - Academic Achievement (JHS)
+    { path: 'slides/quality/grade7-achievement.html', group: 'QUALITY', title: 'G7 Achievement Rate', chart: 'g7AchievementChart' },
+    { path: 'slides/quality/grade8-achievement.html', group: 'QUALITY', title: 'G8 Achievement Rate', chart: 'g8AchievementChart' },
+    { path: 'slides/quality/grade9-achievement.html', group: 'QUALITY', title: 'G9 Achievement Rate', chart: 'g9AchievementChart' },
+    { path: 'slides/quality/grade10-achievement.html', group: 'QUALITY', title: 'G10 Achievement Rate', chart: 'g10AchievementChart' },
     { path: 'slides/quality/jhs-math.html', group: 'QUALITY', title: 'JHS Math', chart: 'jhsMathChart' },
     { path: 'slides/quality/science-trends.html', group: 'QUALITY', title: 'Science Trends', chart: 'sciTrendChart' },
 
-    // QUALITY - Achievements
+    // QUALITY - Academic Achievement (SHS)
+    { path: 'slides/quality/academics-intro.html', group: 'QUALITY', title: 'Academics Intro' },
+    { path: 'slides/quality/grade11-overview.html', group: 'QUALITY', title: 'Grade 11 Overview', chart: 'shsChart' },
+    { path: 'slides/quality/grade11-achievement.html', group: 'QUALITY', title: 'G11 Achievement Rate', chart: 'g11AchievementChart' },
+    { path: 'slides/quality/grade11-deepdive.html', group: 'QUALITY', title: 'Grade 11 Deep Dive', chart: 'g11SubChart' },
+    { path: 'slides/quality/grade11-status.html', group: 'QUALITY', title: 'Grade 11 Status' },
+    { path: 'slides/quality/grade11-competencies.html', group: 'QUALITY', title: 'Grade 11 Competencies' },
+    { path: 'slides/quality/grade12-overview.html', group: 'QUALITY', title: 'G12 Overview', chart: 'g12Chart' },
+    { path: 'slides/quality/grade12-achievement.html', group: 'QUALITY', title: 'G12 Achievement Rate', chart: 'g12AchievementChart' },
+    { path: 'slides/quality/grade12-competencies.html', group: 'QUALITY', title: 'Grade 12 Competencies' },
+
+    // QUALITY - Programs & Holistic
+    { path: 'slides/quality/aral-program.html', group: 'QUALITY', title: 'Aral Program' },
+    { path: 'slides/quality/jdvp-implementation.html', group: 'QUALITY', title: 'JDVP Implementation' },
+    { path: 'slides/quality/jdvp-strategies.html', group: 'QUALITY', title: 'JDVP Strategies' },
+    { path: 'slides/quality/jdvp-gallery.html', group: 'QUALITY', title: 'JDVP Gallery' },
     { path: 'slides/quality/achievements-intro.html', group: 'QUALITY', title: 'Achievements Intro' },
     { path: 'slides/quality/sports-champions.html', group: 'QUALITY', title: 'Sports Winners' },
     { path: 'slides/quality/sports-gallery.html', group: 'QUALITY', title: 'Sports Gallery' },
@@ -61,12 +72,13 @@ const slideManifest = [
     { path: 'slides/quality/dfot-gallery.html', group: 'QUALITY', title: 'DFOT Gallery' },
     { path: 'slides/quality/dspc-gallery.html', group: 'QUALITY', title: 'DSPC Gallery' },
     { path: 'slides/quality/iped-gallery.html', group: 'QUALITY', title: 'IPED Gallery' },
-    { path: 'slides/quality/opcrf-validation.html', group: 'QUALITY', title: 'OPCRF Validation' },
-    { path: 'slides/quality/aral-program.html', group: 'QUALITY', title: 'Aral Program' },
     { path: 'slides/quality/nutrition-gallery.html', group: 'QUALITY', title: 'Nutrition Month' },
     { path: 'slides/quality/sbfp-status.html', group: 'QUALITY', title: 'SBFP Report' },
     { path: 'slides/quality/sbfp-gallery.html', group: 'QUALITY', title: 'SBFP Gallery' },
+
+    // QUALITY - Stakeholders
     { path: 'slides/quality/gpta-officers.html', group: 'QUALITY', title: 'PTA Induction' },
+    { path: 'slides/quality/stakeholders-support.html', group: 'QUALITY', title: 'Stakeholders Support' },
 
     // TEACHER DEVELOPMENT
     { path: 'slides/teacher-development/faculty-research.html', group: 'TEACHER DEVELOPMENT', title: 'Faculty Research' },
@@ -132,7 +144,9 @@ async function loadSlides() {
             slideDiv.setAttribute('data-group', slide.group);
             slideDiv.setAttribute('data-title', slide.title);
             if (slide.chart) {
-                slideDiv.setAttribute('data-chart', slide.chart);
+                // Support multiple charts (array or single string)
+                const chartValue = Array.isArray(slide.chart) ? slide.chart.join(',') : slide.chart;
+                slideDiv.setAttribute('data-chart', chartValue);
             }
             slideDiv.innerHTML = html;
 
@@ -218,8 +232,11 @@ function updateUI() {
     });
 
     // Trigger Charts
-    const chartId = slides[currentSlide].getAttribute('data-chart');
-    if (chartId) renderChart(chartId);
+    const chartAttr = slides[currentSlide].getAttribute('data-chart');
+    if (chartAttr) {
+        const chartIds = chartAttr.split(',');
+        chartIds.forEach(id => renderChart(id.trim()));
+    }
 }
 
 /**
@@ -665,10 +682,109 @@ function updateSbfpCarousel(slides, dots) {
     });
 }
 
+// --- Monthly Pahina Carousel Functions ---
+let monthlyPahinaCarouselIndex = 0;
+
+function moveMonthlyPahinaCarousel(direction) {
+    const slides = document.querySelectorAll('#monthlyPahinaCarousel .carousel-slide');
+    const dots = document.querySelectorAll('#monthlyPahinaDots .carousel-dot');
+    if (slides.length === 0) return;
+
+    monthlyPahinaCarouselIndex += direction;
+    if (monthlyPahinaCarouselIndex >= slides.length) monthlyPahinaCarouselIndex = 0;
+    if (monthlyPahinaCarouselIndex < 0) monthlyPahinaCarouselIndex = slides.length - 1;
+
+    updateMonthlyPahinaCarousel(slides, dots);
+}
+
+function goToMonthlyPahinaSlide(index) {
+    const slides = document.querySelectorAll('#monthlyPahinaCarousel .carousel-slide');
+    const dots = document.querySelectorAll('#monthlyPahinaDots .carousel-dot');
+    if (slides.length === 0) return;
+
+    monthlyPahinaCarouselIndex = index;
+    updateMonthlyPahinaCarousel(slides, dots);
+}
+
+function updateMonthlyPahinaCarousel(slides, dots) {
+    slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === monthlyPahinaCarouselIndex);
+    });
+    dots.forEach((dot, i) => {
+        if (dots[i]) dots[i].classList.toggle('active', i === monthlyPahinaCarouselIndex);
+    });
+}
+
+// --- Reading Month Carousel Functions ---
+let readingMonthCarouselIndex = 0;
+
+function moveReadingMonthCarousel(direction) {
+    const slides = document.querySelectorAll('#readingMonthCarousel .carousel-slide');
+    const dots = document.querySelectorAll('#readingMonthDots .carousel-dot');
+    if (slides.length === 0) return;
+
+    readingMonthCarouselIndex += direction;
+    if (readingMonthCarouselIndex >= slides.length) readingMonthCarouselIndex = 0;
+    if (readingMonthCarouselIndex < 0) readingMonthCarouselIndex = slides.length - 1;
+
+    updateReadingMonthCarousel(slides, dots);
+}
+
+function goToReadingMonthSlide(index) {
+    const slides = document.querySelectorAll('#readingMonthCarousel .carousel-slide');
+    const dots = document.querySelectorAll('#readingMonthDots .carousel-dot');
+    if (slides.length === 0) return;
+
+    readingMonthCarouselIndex = index;
+    updateReadingMonthCarousel(slides, dots);
+}
+
+function updateReadingMonthCarousel(slides, dots) {
+    slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === readingMonthCarouselIndex);
+    });
+    dots.forEach((dot, i) => {
+        if (dots[i]) dots[i].classList.toggle('active', i === readingMonthCarouselIndex);
+    });
+}
+
 // Initialize application
 document.addEventListener('DOMContentLoaded', async () => {
     await loadSlides();
     // Start carousel auto-play after slides are loaded
     setTimeout(() => startCarouselAutoPlay(), 2000);
 });
+
+// --- Stakeholder Carousel Functions ---
+let stakeholderCarouselIndex = 0;
+
+function moveStakeholderCarousel(direction) {
+    const slides = document.querySelectorAll('#stakeholderCarousel .carousel-slide');
+    const dots = document.querySelectorAll('#stakeholderDots .carousel-dot');
+    if (slides.length === 0) return;
+
+    stakeholderCarouselIndex += direction;
+    if (stakeholderCarouselIndex >= slides.length) stakeholderCarouselIndex = 0;
+    if (stakeholderCarouselIndex < 0) stakeholderCarouselIndex = slides.length - 1;
+
+    updateStakeholderCarousel(slides, dots);
+}
+
+function goToStakeholderSlide(index) {
+    const slides = document.querySelectorAll('#stakeholderCarousel .carousel-slide');
+    const dots = document.querySelectorAll('#stakeholderDots .carousel-dot');
+    if (slides.length === 0) return;
+
+    stakeholderCarouselIndex = index;
+    updateStakeholderCarousel(slides, dots);
+}
+
+function updateStakeholderCarousel(slides, dots) {
+    slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === stakeholderCarouselIndex);
+    });
+    dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === stakeholderCarouselIndex);
+    });
+}
 

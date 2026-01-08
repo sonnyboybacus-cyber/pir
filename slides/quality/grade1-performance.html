@@ -1,0 +1,43 @@
+<span class="tag" style="color: #6366f1;">Academic Performance</span>
+<h2>Grade 1 Performance Analysis (Q2)</h2>
+<div class="subtitle" style="color: #94a3b8; margin-top: -10px; margin-bottom: 20px;">Section: 1-MANGGA (N=12)</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; height: calc(100% - 100px);">
+
+    <!-- Left Column: Score Performance -->
+    <div class="card" style="display: flex; flex-direction: column; padding: 1.2rem;">
+        <h3 style="margin-top: 0; color: #1e293b; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
+            <i class="fa-solid fa-chart-bar" style="color: #3b82f6;"></i> Student Scores (High vs Low)
+        </h3>
+        <div class="chart-container" style="position: relative; flex: 1; min-height: 0;">
+            <canvas id="g1PerformanceChart"></canvas>
+        </div>
+        <p style="margin: 1rem 0 0 0; font-size: 0.9rem; color: #64748b; text-align: center;">
+            <strong style="color: #22c55e;">Reading & GMRC</strong> show highest potential (Scores 25-27). <br>
+            <strong style="color: #ef4444;">Makabansa</strong> shows limited range (Max 19).
+        </p>
+    </div>
+
+    <!-- Right Column: Item Mastery -->
+    <div class="card" style="display: flex; flex-direction: column; padding: 1.2rem;">
+        <h3 style="margin-top: 0; color: #1e293b; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
+            <i class="fa-solid fa-chart-simple" style="color: #f59e0b;"></i> Item Analysis (Mastery Levels)
+        </h3>
+        <div class="chart-container" style="position: relative; flex: 1; min-height: 0;">
+            <canvas id="g1MasteryChart"></canvas>
+        </div>
+        <div
+            style="display: flex; justify-content: center; gap: 1rem; margin-top: 0.5rem; font-size: 0.8rem; color: #475569;">
+            <div style="display: flex; align-items: center; gap: 5px;"><span
+                    style="width: 10px; height: 10px; background: rgba(34, 197, 94, 0.7); border-radius: 2px;"></span>
+                Mastered</div>
+            <div style="display: flex; align-items: center; gap: 5px;"><span
+                    style="width: 10px; height: 10px; background: rgba(245, 158, 11, 0.7); border-radius: 2px;"></span>
+                Least</div>
+            <div style="display: flex; align-items: center; gap: 5px;"><span
+                    style="width: 10px; height: 10px; background: rgba(239, 68, 68, 0.7); border-radius: 2px;"></span>
+                Not Mastered</div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,88 @@
+<span class="tag" style="color: #6366f1;">Literacy Program</span>
+<h2>Reading Month Celebration 2025</h2>
+<div class="subtitle" style="color: #94a3b8; margin-top: -10px; margin-bottom: 20px; font-style: italic;">"Reading is a
+    Bridge to a Future Full of Hope"</div>
+
+<div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; height: calc(100% - 100px);">
+
+    <!-- Left Column: Narrative -->
+    <div style="display: flex; flex-direction: column; gap: 1rem; overflow-y: auto; padding-right: 10px;">
+
+        <!-- Objectives -->
+        <div class="card" style="padding: 1.2rem;">
+            <h3
+                style="margin-top: 0; color: #1e293b; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-bullseye" style="color: #f59e0b;"></i> Objectives
+            </h3>
+            <ul style="margin: 0.5rem 0 0 1.2rem; color: #475569; font-size: 0.95rem; line-height: 1.5;">
+                <li>Create a safe, welcoming reading environment.</li>
+                <li>Engage learners in meaningful literacy activities.</li>
+                <li>Improve comprehension, fluency, and vocabulary.</li>
+                <li>Strengthen support through parent & community collaboration.</li>
+            </ul>
+        </div>
+
+        <!-- Activities -->
+        <div class="card" style="padding: 1.2rem;">
+            <h3
+                style="margin-top: 0; color: #1e293b; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-calendar-check" style="color: #3b82f6;"></i> Key Activities
+            </h3>
+            <ul style="margin: 0.5rem 0 0 1.2rem; color: #475569; font-size: 0.95rem; line-height: 1.5;">
+                <li><strong>Opening Program:</strong> Inspiring messages & commitment setting.</li>
+                <li><strong>Daily Literacy Boosters:</strong> Tongue twisters & vocabulary drills.</li>
+                <li><strong>Share a Story:</strong> Engaging discussions on poems & stories.</li>
+                <li><strong>Contests:</strong> Spelling Bee, Rebus Puzzle, Storytelling.</li>
+                <li><strong>Culmination:</strong> Parade of Characters & Recognition.</li>
+            </ul>
+        </div>
+
+        <!-- Outcomes -->
+        <div class="card" style="padding: 1.2rem;">
+            <h3
+                style="margin-top: 0; color: #1e293b; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-chart-line" style="color: #22c55e;"></i> Outcomes
+            </h3>
+            <p style="margin: 0.5rem 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.5;">
+                Remarkable progress in fluency, vocabulary, and confidence across all levels.
+                Learners showed increased enthusiasm for oral reading and storytelling,
+                turning classrooms into lively spaces for creativity.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Right Column: Carousel -->
+    <div style="display: flex; flex-direction: column;">
+        <div class="carousel-container" style="flex: 1; height: 100%;">
+            <div class="carousel-track" id="readingMonthCarousel">
+                <div class="carousel-slide active"><img src="reading-month-pictures/1.jpg" alt="Reading Month Activity">
+                </div>
+                <div class="carousel-slide"><img src="reading-month-pictures/2.jpg" alt="Reading Month Activity"></div>
+                <div class="carousel-slide"><img src="reading-month-pictures/3.jpg" alt="Reading Month Activity"></div>
+                <div class="carousel-slide"><img src="reading-month-pictures/4.jpg" alt="Reading Month Activity"></div>
+                <div class="carousel-slide"><img src="reading-month-pictures/5.jpg" alt="Reading Month Activity"></div>
+                <div class="carousel-slide"><img src="reading-month-pictures/6.jpg" alt="Reading Month Activity"></div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button class="carousel-btn carousel-btn-prev" onclick="moveReadingMonthCarousel(-1)">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn carousel-btn-next" onclick="moveReadingMonthCarousel(1)">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <!-- Dots -->
+            <div class="carousel-dots" id="readingMonthDots">
+                <span class="carousel-dot active" onclick="goToReadingMonthSlide(0)"></span>
+                <span class="carousel-dot" onclick="goToReadingMonthSlide(1)"></span>
+                <span class="carousel-dot" onclick="goToReadingMonthSlide(2)"></span>
+                <span class="carousel-dot" onclick="goToReadingMonthSlide(3)"></span>
+                <span class="carousel-dot" onclick="goToReadingMonthSlide(4)"></span>
+                <span class="carousel-dot" onclick="goToReadingMonthSlide(5)"></span>
+            </div>
+        </div>
+    </div>
+
+</div>

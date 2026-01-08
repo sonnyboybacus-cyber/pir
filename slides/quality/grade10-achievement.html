@@ -1,0 +1,70 @@
+<div style="display: flex; flex-direction: column; height: 100%; gap: 1rem;">
+
+    <div style="text-align: center;">
+        <span class="tag" style="color: #6366f1;">Quality</span>
+        <h2 style="margin: 0.5rem 0 0 0; font-size: 2.0rem;">Grade 10 Achievement Rate Analysis</h2>
+        <p style="font-size: 1rem; color: #475569; margin-top: 5px;">Comparative Performance: First Quarter vs Second
+            Quarter</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; flex: 1; min-height: 0;">
+
+        <!-- Chart Container -->
+        <div class="glass-card"
+            style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: center; background: rgba(0, 0, 0, 0.02);">
+            <canvas id="g10AchievementChart"></canvas>
+        </div>
+
+        <!-- Interpretation & Analysis -->
+        <div style="display: flex; flex-direction: column; gap: 1rem; overflow-y: auto;">
+
+            <!-- Summary -->
+            <div class="glass-card" style="padding: 1rem; border-left: 4px solid #ef4444;">
+                <h4 style="margin: 0 0 0.5rem 0; color: #ef4444; display: flex; align-items: center; gap: 8px;">
+                    <i class="fa-solid fa-arrow-trend-down"></i> Critical Decline
+                </h4>
+                <p style="color: #475569; font-size: 0.9rem; margin: 0; line-height: 1.5;">
+                    The Second Quarter shows a <strong>drastic decrease</strong> in performance across nearly all major
+                    subjects compared to Q1. The average Achievement Rate has dropped significantly, raising urgent
+                    concerns.
+                </p>
+            </div>
+
+            <!-- Major Drops -->
+            <div class="glass-card" style="padding: 1rem; border-left: 4px solid #ef4444;">
+                <h4 style="margin: 0 0 0.5rem 0; color: #ef4444; display: flex; align-items: center; gap: 8px;">
+                    <i class="fa-solid fa-circle-exclamation"></i> Major Regression
+                </h4>
+                <p style="color: #475569; font-size: 0.9rem; margin: 0; line-height: 1.5;">
+                    <strong>A.P (-50%)</strong> and <strong>MAPEH (-50%)</strong> saw the most severe drops, effectively
+                    halving their performance. English and Science also faced heavy declines of over
+                    <strong>-25%</strong>.
+                </p>
+            </div>
+
+            <!-- Bright Spot -->
+            <div class="glass-card" style="padding: 1rem; border-left: 4px solid #22c55e;">
+                <h4 style="margin: 0 0 0.5rem 0; color: #22c55e; display: flex; align-items: center; gap: 8px;">
+                    <i class="fa-solid fa-arrow-trend-up"></i> Improved Subject
+                </h4>
+                <p style="color: #475569; font-size: 0.9rem; margin: 0; line-height: 1.5;">
+                    <strong>GMRC (+12.19%)</strong> is the sole outlier contributing positively, improving from 58.28%
+                    to 70.47%. This suggests effective values education strategies were implemented in Q2.
+                </p>
+            </div>
+
+            <!-- Recommendation -->
+            <div class="glass-card" style="padding: 1rem; border-left: 4px solid #6366f1;">
+                <h4 style="margin: 0 0 0.5rem 0; color: #6366f1; display: flex; align-items: center; gap: 8px;">
+                    <i class="fa-solid fa-clipboard-check"></i> Urgent Action
+                </h4>
+                <p style="color: #475569; font-size: 0.9rem; margin: 0; line-height: 1.5;">
+                    Conduct an immediate root cause analysis for the steep drops in A.P and MAPEH. Was there a change in
+                    assessment difficulty, teacher availability, or curriculum coverage? Inteventions needed
+                    immediately.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>

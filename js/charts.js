@@ -33,6 +33,707 @@ function renderChart(id) {
     let config = {};
 
     switch (id) {
+        case 'achievementChart':
+            config = {
+                type: 'bar',
+                data: {
+                    labels: ['Filipino', 'English', 'Math', 'GMRC', 'Science', 'A.P', 'EPP', 'MAPEH'],
+                    datasets: [
+                        {
+                            label: 'First Quarter',
+                            data: [72.5, 86.04, 69.17, 85.63, 82.08, 69.58, 69.38, 78.54],
+                            backgroundColor: 'rgba(99, 102, 241, 0.7)', // Indigo
+                            borderColor: 'rgba(99, 102, 241, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Second Quarter',
+                            data: [80.21, 73.13, 66.46, 78.75, 69.58, 80.83, 75.42, 82.92],
+                            backgroundColor: 'rgba(34, 197, 94, 0.7)', // Green
+                            borderColor: 'rgba(34, 197, 94, 1)',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 50,
+                            max: 100,
+                            grid: { color: 'rgba(0, 0, 0, 0.1)' },
+                            ticks: { color: '#475569' }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: { color: '#475569' }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: { color: '#475569', usePointStyle: true, boxWidth: 8 }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    return context.dataset.label + ': ' + context.formattedValue + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+            break;
+
+        case 'g10AchievementChart':
+            config = {
+                type: 'bar',
+                data: {
+                    labels: ['Filipino', 'English', 'Math', 'GMRC', 'Science', 'A.P', 'EPP', 'MAPEH'],
+                    datasets: [
+                        {
+                            label: 'First Quarter',
+                            data: [71.88, 80.31, 74.22, 58.28, 80.16, 99.54, 98.44, 81.88],
+                            backgroundColor: 'rgba(99, 102, 241, 0.7)', // Indigo
+                            borderColor: 'rgba(99, 102, 241, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Second Quarter',
+                            data: [66.41, 55.00, 68.13, 70.47, 52.50, 49.69, 70.63, 32.03],
+                            backgroundColor: 'rgba(34, 197, 94, 0.7)', // Green
+                            borderColor: 'rgba(34, 197, 94, 1)',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 0,
+                            max: 100,
+                            grid: { color: 'rgba(0, 0, 0, 0.1)' },
+                            ticks: { color: '#475569' }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: { color: '#475569' }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: { color: '#475569', usePointStyle: true, boxWidth: 8 }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    return context.dataset.label + ': ' + context.formattedValue + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+            break;
+
+        case 'g9AchievementChart':
+            config = {
+                type: 'bar',
+                data: {
+                    labels: ['Filipino', 'English', 'Math', 'GMRC', 'Science', 'A.P', 'TLE', 'MAPEH'],
+                    datasets: [
+                        {
+                            label: 'First Quarter',
+                            data: [63.80, 57.00, 36.00, 76.00, 93.00, 53.40, 67.40, 52.80],
+                            backgroundColor: 'rgba(99, 102, 241, 0.7)', // Indigo
+                            borderColor: 'rgba(99, 102, 241, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Second Quarter',
+                            data: [70.80, 34.60, 59.00, 72.00, 39.40, 76.60, 63.00, 63.40],
+                            backgroundColor: 'rgba(34, 197, 94, 0.7)', // Green
+                            borderColor: 'rgba(34, 197, 94, 1)',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 0,
+                            max: 100,
+                            grid: { color: 'rgba(0, 0, 0, 0.1)' },
+                            ticks: { color: '#475569' }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: { color: '#475569' }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: { color: '#475569', usePointStyle: true, boxWidth: 8 }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    return context.dataset.label + ': ' + context.formattedValue + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+            break;
+
+        case 'g12AchievementChart':
+            config = {
+                type: 'bar',
+                data: {
+                    labels: ['App. Econ', 'Trends', 'P.E.', 'PerDev', 'CSS', 'USCP', 'Research 2', 'EAPP'],
+                    datasets: [
+                        {
+                            label: 'First Quarter',
+                            data: [32.47, 32.94, 35.88, 35.18, 29.18, 34.35, 35.29, 34.71],
+                            backgroundColor: 'rgba(99, 102, 241, 0.7)', // Indigo
+                            borderColor: 'rgba(99, 102, 241, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Second Quarter',
+                            data: [63.76, 60.24, 62.12, 62.35, 60.82, 59.41, 61.65, 63.88],
+                            backgroundColor: 'rgba(34, 197, 94, 0.7)', // Green
+                            borderColor: 'rgba(34, 197, 94, 1)',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 0,
+                            max: 80, // Adjusted max since scores are ~60
+                            grid: { color: 'rgba(0, 0, 0, 0.1)' },
+                            ticks: { color: '#475569' }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: { color: '#475569' }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: { color: '#475569', usePointStyle: true, boxWidth: 8 }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    return context.dataset.label + ': ' + context.formattedValue + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+            break;
+
+        case 'g5AchievementChart':
+            config = {
+                type: 'bar',
+                data: {
+                    labels: ['Filipino', 'English', 'Math', 'GMRC', 'Science', 'A.P', 'EPP', 'MAPEH'],
+                    datasets: [
+                        {
+                            label: 'First Quarter',
+                            data: [78.68, 75.88, 52.94, 86.62, 66.03, 88.82, 82.94, 71.91],
+                            backgroundColor: 'rgba(99, 102, 241, 0.7)', // Indigo
+                            borderColor: 'rgba(99, 102, 241, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Second Quarter',
+                            data: [76.91, 75.15, 66.18, 90.44, 70.00, 84.26, 73.38, 67.21],
+                            backgroundColor: 'rgba(34, 197, 94, 0.7)', // Green
+                            borderColor: 'rgba(34, 197, 94, 1)',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 0,
+                            max: 100,
+                            grid: { color: 'rgba(0, 0, 0, 0.1)' },
+                            ticks: { color: '#475569' }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: { color: '#475569' }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: { color: '#475569', usePointStyle: true, boxWidth: 8 }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    return context.dataset.label + ': ' + context.formattedValue + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+            break;
+
+        case 'g6AchievementChart':
+            config = {
+                type: 'bar',
+                data: {
+                    labels: ['Filipino', 'English', 'Math', 'GMRC', 'Science', 'A.P', 'EPP', 'MAPEH'],
+                    datasets: [
+                        {
+                            label: 'First Quarter',
+                            data: [57.34, 43.19, 32.22, 47.22, 25.56, 34.31, 35.69, 31.94],
+                            backgroundColor: 'rgba(99, 102, 241, 0.7)', // Indigo
+                            borderColor: 'rgba(99, 102, 241, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Second Quarter',
+                            data: [69.22, 34.72, 41.67, 55.14, 52.08, 45.83, 37.36, 46.11],
+                            backgroundColor: 'rgba(34, 197, 94, 0.7)', // Green
+                            borderColor: 'rgba(34, 197, 94, 1)',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 0,
+                            max: 100,
+                            grid: { color: 'rgba(0, 0, 0, 0.1)' },
+                            ticks: { color: '#475569' }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: { color: '#475569' }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: { color: '#475569', usePointStyle: true, boxWidth: 8 }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    return context.dataset.label + ': ' + context.formattedValue + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+            break;
+
+        case 'g7AchievementChart':
+            config = {
+                type: 'bar',
+                data: {
+                    labels: ['Filipino', 'English', 'Math', 'Science', 'A.P.', 'V.E.', 'TLE', 'MAPEH'],
+                    datasets: [
+                        {
+                            label: 'First Quarter',
+                            data: [61.09, 48.19, 48.61, 86.39, 59.03, 50.56, 55.83, 43.75],
+                            backgroundColor: 'rgba(99, 102, 241, 0.7)', // Indigo
+                            borderColor: 'rgba(99, 102, 241, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Second Quarter',
+                            data: [43.44, 45.00, 51.39, 61.53, 28.61, 39.31, 62.22, 59.72],
+                            backgroundColor: 'rgba(34, 197, 94, 0.7)', // Green
+                            borderColor: 'rgba(34, 197, 94, 1)',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 0,
+                            max: 100,
+                            grid: { color: 'rgba(0, 0, 0, 0.1)' },
+                            ticks: { color: '#475569' }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: { color: '#475569' }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: { color: '#475569', usePointStyle: true, boxWidth: 8 }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    return context.dataset.label + ': ' + context.formattedValue + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+            break;
+
+        case 'g8AchievementChart':
+            config = {
+                type: 'bar',
+                data: {
+                    labels: ['Filipino', 'English', 'Math', 'Science', 'TLE', 'Val Ed', 'MAPEH', 'Ar Pan'],
+                    datasets: [
+                        {
+                            label: 'First Quarter',
+                            data: [31.20, 31.87, 34.27, 33.87, 28.80, 33.20, 34.13, 33.87],
+                            backgroundColor: 'rgba(99, 102, 241, 0.7)', // Indigo
+                            borderColor: 'rgba(99, 102, 241, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Second Quarter',
+                            data: [38.27, 38.93, 39.73, 39.60, 38.40, 39.07, 39.73, 40.27],
+                            backgroundColor: 'rgba(34, 197, 94, 0.7)', // Green
+                            borderColor: 'rgba(34, 197, 94, 1)',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 0,
+                            max: 100,
+                            grid: { color: 'rgba(0, 0, 0, 0.1)' },
+                            ticks: { color: '#475569' }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: { color: '#475569' }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: { color: '#475569', usePointStyle: true, boxWidth: 8 }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    return context.dataset.label + ': ' + context.formattedValue + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+            break;
+
+        case 'g1PerformanceChart':
+            config = {
+                type: 'bar',
+                data: {
+                    labels: ['Reading', 'GMRC', 'Math', 'Language', 'Makabansa'],
+                    datasets: [
+                        {
+                            label: 'Highest Score',
+                            data: [25, 27, 23, 22, 19],
+                            backgroundColor: 'rgba(34, 197, 94, 0.7)',
+                            borderColor: 'rgba(34, 197, 94, 1)',
+                            borderWidth: 1,
+                            borderRadius: 4
+                        },
+                        {
+                            label: 'Lowest Score',
+                            data: [10, 9, 12, 8, 8],
+                            backgroundColor: 'rgba(239, 68, 68, 0.7)',
+                            borderColor: 'rgba(239, 68, 68, 1)',
+                            borderWidth: 1,
+                            borderRadius: 4
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 30, // Total items
+                            title: { display: true, text: 'Score (Max 30)' }
+                        }
+                    },
+                    plugins: {
+                        legend: { position: 'top' }
+                    }
+                }
+            };
+            break;
+
+        case 'g1MasteryChart':
+            config = {
+                type: 'bar',
+                data: {
+                    labels: ['Language', 'Reading', 'Math', 'Makabansa', 'GMRC'],
+                    datasets: [
+                        {
+                            label: 'Mastered',
+                            data: [4, 13, 9, 6, 6],
+                            backgroundColor: 'rgba(34, 197, 94, 0.7)',
+                            borderColor: 'rgba(34, 197, 94, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Least Mastered',
+                            data: [10, 8, 5, 3, 12],
+                            backgroundColor: 'rgba(245, 158, 11, 0.7)',
+                            borderColor: 'rgba(245, 158, 11, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Not Mastered',
+                            data: [16, 9, 16, 21, 12],
+                            backgroundColor: 'rgba(239, 68, 68, 0.7)',
+                            borderColor: 'rgba(239, 68, 68, 1)',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: { stacked: true },
+                        y: {
+                            stacked: true,
+                            max: 30, // Total items
+                            title: { display: true, text: 'Number of Items' }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false } // Custom legend in HTML
+                    }
+                }
+            };
+            break;
+
+        case 'g2SubjectChart':
+            config = {
+                type: 'bar',
+                data: {
+                    labels: ['GMRC 2', 'Math 2', 'English 2', 'Filipino 2'],
+                    datasets: [{
+                        label: 'Average Score (Max 30)',
+                        data: [23.25, 21.30, 18.55, 17.80],
+                        backgroundColor: [
+                            'rgba(34, 197, 94, 0.7)', // Green for high
+                            'rgba(59, 130, 246, 0.7)', // Blue
+                            'rgba(245, 158, 11, 0.7)', // Amber
+                            'rgba(239, 68, 68, 0.7)'   // Red for low
+                        ],
+                        borderColor: [
+                            'rgba(34, 197, 94, 1)',
+                            'rgba(59, 130, 246, 1)',
+                            'rgba(245, 158, 11, 1)',
+                            'rgba(239, 68, 68, 1)'
+                        ],
+                        borderWidth: 1,
+                        borderRadius: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y', // Horizontal bars
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            max: 30,
+                            title: { display: true, text: 'Average Score' }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false }
+                    }
+                }
+            };
+            break;
+
+        case 'g2StudentChart':
+            config = {
+                type: 'bar',
+                data: {
+                    labels: ['Rachel Arnoza', 'Ylah Sullano', 'Stephanie Lapitan', 'Rhiezel Tual', 'Jenice Bation'],
+                    datasets: [{
+                        label: 'Total Score',
+                        data: [106, 100, 99, 93, 92],
+                        backgroundColor: 'rgba(59, 130, 246, 0.7)',
+                        borderColor: 'rgba(59, 130, 246, 1)',
+                        borderWidth: 1,
+                        borderRadius: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 40,
+                            title: { display: true, text: 'Total Score (Max 120)' }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false }
+                    }
+                }
+            };
+            break;
+
+        case 'g11AchievementChart':
+            config = {
+                type: 'bar',
+                data: {
+                    labels: ['Filipino', 'English', 'Math', 'Oral Comm', 'Science', 'Philo', 'Em-Tech', 'Org Mgt', 'P.E.'],
+                    datasets: [
+                        {
+                            label: 'First Quarter',
+                            data: [64.55, 75.68, 83.41, 49.77, 68.18, 65.68, 94.55, 77.73, 95.91],
+                            backgroundColor: 'rgba(99, 102, 241, 0.7)', // Indigo
+                            borderColor: 'rgba(99, 102, 241, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Second Quarter',
+                            data: [67.50, 78.50, 86.00, 55.00, 71.50, 69.00, 96.00, 81.00, 97.00],
+                            backgroundColor: 'rgba(34, 197, 94, 0.7)', // Green
+                            borderColor: 'rgba(34, 197, 94, 1)',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 0,
+                            max: 100,
+                            grid: { color: 'rgba(0, 0, 0, 0.1)' },
+                            ticks: { color: '#475569' }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: { color: '#475569' }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: { color: '#475569', usePointStyle: true, boxWidth: 8 }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    return context.dataset.label + ': ' + context.formattedValue + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+            break;
+
+        case 'g3AchievementChart':
+            config = {
+                type: 'bar',
+                data: {
+                    labels: ['Filipino', 'English', 'Math', 'GMRC', 'Science', 'A.P', 'MAPEH'],
+                    datasets: [
+                        {
+                            label: 'First Quarter',
+                            data: [64.0, 75.0, 54.0, 51.0, 68.0, 63.0, 61.0],
+                            backgroundColor: 'rgba(99, 102, 241, 0.7)', // Indigo
+                            borderColor: 'rgba(99, 102, 241, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Second Quarter',
+                            data: [71.4, 81.1, 62.2, 58.0, 79.7, 71.4, 68.0],
+                            backgroundColor: 'rgba(34, 197, 94, 0.7)', // Green
+                            borderColor: 'rgba(34, 197, 94, 1)',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 0,
+                            max: 100,
+                            grid: { color: 'rgba(0, 0, 0, 0.1)' },
+                            ticks: { color: '#475569' }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: { color: '#475569' }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: { color: '#475569', usePointStyle: true, boxWidth: 8 }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    return context.dataset.label + ': ' + context.formattedValue + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+            break;
+
         case 'enrollChart':
             config = {
                 type: 'doughnut',
