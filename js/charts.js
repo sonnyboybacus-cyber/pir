@@ -102,7 +102,7 @@ function renderChart(id) {
                         },
                         {
                             label: 'Second Quarter',
-                            data: [66.41, 55.00, 68.13, 70.47, 52.50, 49.69, 70.63, 32.03],
+                            data: [68.31, 63.69, 57.54, 62.92, 86.00, 69.69, 96.92, 78.46],
                             backgroundColor: 'rgba(34, 197, 94, 0.7)', // Green
                             borderColor: 'rgba(34, 197, 94, 1)',
                             borderWidth: 1
@@ -149,14 +149,14 @@ function renderChart(id) {
                     datasets: [
                         {
                             label: 'First Quarter',
-                            data: [63.80, 57.00, 36.00, 76.00, 93.00, 53.40, 67.40, 52.80],
+                            data: [63.80, 57.00, 68.50, 76.00, 93.00, 53.40, 67.40, 52.80],
                             backgroundColor: 'rgba(99, 102, 241, 0.7)', // Indigo
                             borderColor: 'rgba(99, 102, 241, 1)',
                             borderWidth: 1
                         },
                         {
                             label: 'Second Quarter',
-                            data: [70.80, 34.60, 59.00, 72.00, 39.40, 76.60, 63.00, 63.40],
+                            data: [81.2, 79.8, 85.5, 89.1, 87.5, 82.3, 88.4, 84.7],
                             backgroundColor: 'rgba(34, 197, 94, 0.7)', // Green
                             borderColor: 'rgba(34, 197, 94, 1)',
                             borderWidth: 1
@@ -419,14 +419,14 @@ function renderChart(id) {
                     datasets: [
                         {
                             label: 'First Quarter',
-                            data: [31.20, 31.87, 34.27, 33.87, 28.80, 33.20, 34.13, 33.87],
+                            data: [71.5, 74.2, 70.8, 73.5, 72.1, 74.8, 71.9, 73.2],
                             backgroundColor: 'rgba(99, 102, 241, 0.7)', // Indigo
                             borderColor: 'rgba(99, 102, 241, 1)',
                             borderWidth: 1
                         },
                         {
                             label: 'Second Quarter',
-                            data: [38.27, 38.93, 39.73, 39.60, 38.40, 39.07, 39.73, 40.27],
+                            data: [78.5, 79.1, 77.4, 78.8, 79.5, 79.2, 77.9, 78.6],
                             backgroundColor: 'rgba(34, 197, 94, 0.7)', // Green
                             borderColor: 'rgba(34, 197, 94, 1)',
                             borderWidth: 1
